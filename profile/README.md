@@ -41,6 +41,8 @@ When commiting to a repository, especially if you are working with other people 
 
 This is the format:
 
+```markdown
 <type>(optional scope): <description>
+```
 
 - Example -> docs: update UAV setup guide
