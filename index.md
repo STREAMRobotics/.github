@@ -1,8 +1,9 @@
-# STREAM Robotics Lab
-
-<div class="logo-hero">
-  <img src="media/stream-logo.png" alt="STREAM Robotics Lab logo">
-</div>
+<header class="stream-header">
+  <div class="logo-hero">
+    <img src="media/stream-logo.png" alt="STREAM Robotics Lab logo">
+  </div>
+  <h1>STREAM Robotics Lab</h1>
+</header>
 
 **Welcome!**
 
