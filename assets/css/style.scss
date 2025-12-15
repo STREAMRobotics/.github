@@ -1,0 +1,65 @@
+---
+---
+
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap");
+@import "jekyll-theme-minimal";
+
+/* Palette: Prussian Blue (primary), Cool Steel (muted), Space Indigo (surface), Sunlit Clay (accent), Slate Grey (secondary) */
+:root {
+  --brand-primary: #101F47;
+  --brand-secondary: #6F7586;
+  --brand-accent: #E2A754;
+  --brand-muted: #9B9EA8;
+  --brand-surface: #101E48;
+  --body-font: "Space Grotesk", "Inter", system-ui, sans-serif;
+  --heading-font: "Space Mono", "Space Grotesk", "Inter", system-ui, sans-serif;
+}
+
+body {
+  font-family: var(--body-font);
+  color: var(--brand-primary);
+  background: var(--brand-surface);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  color: var(--brand-primary);
+  letter-spacing: 0.02em;
+}
+
+p,
+li {
+  line-height: 1.7;
+}
+
+.site-header,
+.site-footer {
+  background: white;
+  border-color: rgba(13, 26, 42, 0.1);
+}
+
+a {
+  color: var(--brand-accent);
+  font-weight: 500;
+}
+
+a:hover {
+  color: var(--brand-secondary);
+}
+
+.btn,
+button {
+  background: var(--brand-secondary);
+  border-color: var(--brand-secondary);
+  color: white;
+}
+
+blockquote {
+  border-left-color: var(--brand-secondary);
+  background: rgba(15, 32, 48, 0.05);
+}
