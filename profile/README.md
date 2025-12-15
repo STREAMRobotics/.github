@@ -8,7 +8,7 @@ Our team is involved on researchs related to Unmanned Aerial Vehicles, Ground Ro
 
 ## Our Projects
 
-- **RoboticsXR**: Paper submitted to ICUAS2026. [Read more](papers/robotics-xr.md).
+- **RoboticsXR**: Paper submitted to ICUAS2026. [Read more](../papers/robotics-xr.md).
 
 ## Our Robots
 
