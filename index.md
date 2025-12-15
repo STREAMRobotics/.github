@@ -8,7 +8,7 @@ Our team is involved on researchs related to Unmanned Aerial Vehicles, Ground Ro
 
 ## Our Projects
 
-- **RoboticsXR**: Paper submitted to ICUAS2026. [Read more](papers/robotics-xr.md).
+- **RoboticsXR**: RoboticsXR is an extended reality framework that fuses real-world robot motion with synthetic visual data. It uses ROS2 to integrate a YOLOv8-based detection system and a ResNet50 network for precise distance estimation, enabling efficient testing of visual navigation algorithms across varied hardware and lighting conditions. [Read more](papers/robotics-xr.md).
 
 ## Our Robots
 
