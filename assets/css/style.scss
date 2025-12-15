@@ -65,7 +65,7 @@ li {
   top: 0;
   background: var(--brand-background);
   z-index: 10;
-  padding: 1rem clamp(1rem, 4vw, 2rem);
+  padding: 1.5rem clamp(1rem, 4vw, 2rem);
   border-bottom: 1px solid #e0e0e0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
@@ -81,16 +81,17 @@ li {
 .logo-and-title {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  text-align: left; /* Ensure text (if any) is left-aligned */
+  margin-right: auto; /* Push it to the left */
 }
 
 .stream-header img {
-  height: 40px;
+  height: 50px;
   width: auto;
 }
 
 .stream-header h1 {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   color: var(--brand-primary);
   letter-spacing: 0.05em;
   margin: 0;

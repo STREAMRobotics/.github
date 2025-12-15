@@ -2,7 +2,6 @@
   <div class="header-container">
     <div class="logo-and-title">
       <img src="media/stream-logo.png" alt="STREAM Robotics Lab logo">
-      <h1>STREAM Robotics Lab</h1>
     </div>
     <nav class="main-nav">
       <a href="#papers">Papers</a>
