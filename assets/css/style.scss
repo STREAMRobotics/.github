@@ -37,24 +37,6 @@ h6 {
   letter-spacing: 0.02em;
 }
 
-.site-title,
-.site-description {
-  color: var(--brand-primary);
-}
-
-.hero-title,
-.section-heading {
-  color: var(--brand-primary);
-  font-weight: 600;
-}
-
-.prussian-callout {
-  color: var(--brand-primary);
-  border-left: 4px solid var(--brand-primary);
-  padding-left: 0.75rem;
-  margin: 1rem 0;
-}
-
 p,
 li {
   line-height: 1.7;
@@ -78,20 +60,11 @@ li {
 .logo-and-title {
   display: flex;
   align-items: center;
-  text-align: left; /* Ensure text (if any) is left-aligned */
-  margin-right: auto; /* Push it to the left */
 }
 
 .stream-header img {
   height: 60px;
   width: auto;
-}
-
-.stream-header h1 {
-  font-size: 1.75rem;
-  color: var(--brand-primary);
-  letter-spacing: 0.05em;
-  margin: 0;
 }
 
 .main-nav {
@@ -109,12 +82,6 @@ li {
 
 .main-nav a:hover {
   color: var(--brand-primary);
-}
-
-.site-header,
-.site-footer {
-  background: white;
-  border-color: rgba(13, 26, 42, 0.1);
 }
 
 a {
