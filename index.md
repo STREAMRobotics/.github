@@ -35,4 +35,4 @@ The Robots (UGVs and UAVs) employed in our research activities are listed below 
 
 ### Contributing
 
-Please check out our [Best Practice Guide](profile/CONTRIBUTING.md) for naming conventions and commit guidelines.
+Please check out our [Best Practice Guide](https://github.com/STREAMRobotics/.github/blob/main/profile/CONTRIBUTING.md) on GitHub for naming conventions and commit guidelines.
