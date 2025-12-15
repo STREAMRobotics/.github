@@ -18,7 +18,7 @@
 
 body {
   font-family: var(--body-font);
-  color: var(--brand-primary);
+  color: var(--brand-muted);
   background: var(--brand-background);
 }
 
@@ -31,6 +31,24 @@ h6 {
   font-family: var(--heading-font);
   color: var(--brand-primary);
   letter-spacing: 0.02em;
+}
+
+.site-title,
+.site-description {
+  color: var(--brand-primary);
+}
+
+.hero-title,
+.section-heading {
+  color: var(--brand-primary);
+  font-weight: 600;
+}
+
+.prussian-callout {
+  color: var(--brand-primary);
+  border-left: 4px solid var(--brand-primary);
+  padding-left: 0.75rem;
+  margin: 1rem 0;
 }
 
 p,
