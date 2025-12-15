@@ -11,6 +11,7 @@
   --brand-accent: #E2A754;
   --brand-muted: #9B9EA8;
   --brand-surface: #101E48;
+  --brand-background: #F8F9FC;
   --body-font: "Space Grotesk", "Inter", system-ui, sans-serif;
   --heading-font: "Space Mono", "Space Grotesk", "Inter", system-ui, sans-serif;
 }
@@ -18,7 +19,7 @@
 body {
   font-family: var(--body-font);
   color: var(--brand-primary);
-  background: var(--brand-surface);
+  background: var(--brand-background);
 }
 
 h1,
