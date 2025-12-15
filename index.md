@@ -1,5 +1,9 @@
 # STREAM Robotics Lab
 
+<div class="logo-hero">
+  <img src="media/stream-logo.png" alt="STREAM Robotics Lab logo">
+</div>
+
 **Welcome!**
 
 The **AeroSpace AuTonomous Robots with Onboard IntElligent AlgorithMs team (STREAM Robotics Lab)** is part of the Department of Mechanical and Aerospace Engineering at Politecnico di Torino and of the Flight Mechanics Research Team.

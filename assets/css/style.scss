@@ -56,6 +56,18 @@ li {
   line-height: 1.7;
 }
 
+.logo-hero {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.logo-hero img {
+  max-width: 260px;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
 .site-header,
 .site-footer {
   background: white;
