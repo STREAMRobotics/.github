@@ -1,15 +1,20 @@
-<header class="stream-header">
-  <div class="header-container">
-    <div class="logo-and-title">
-      <img src="media/stream-logo.png" alt="STREAM Robotics Lab logo">
-    </div>
-    <nav class="main-nav">
-      <a href="#papers">Papers</a>
-      <a href="#robots">Robots</a>
-      <a href="#contributing">Contributing</a>
-    </nav>
-  </div>
-</header>
+---
+layout: default
+title: STREAM Robotics Lab
+---
+
+<!-- <header class="stream-header"> -->
+<!--   <div class="header-container"> -->
+<!--     <div class="logo-and-title"> -->
+<!--       <img src="media/stream-logo.png" alt="STREAM Robotics Lab logo"> -->
+<!--     </div> -->
+<!--     <nav class="main-nav"> -->
+<!--       <a href="#papers">Papers</a> -->
+<!--       <a href="#robots">Robots</a> -->
+<!--       <a href="#contributing">Contributing</a> -->
+<!--     </nav> -->
+<!--   </div> -->
+<!-- </header> -->
 
 **Welcome!**
 
@@ -27,17 +32,18 @@ The Robots (UGVs and UAVs) employed in our research activities are listed below 
 
 ### UGVs (Unmanned Ground Vehicles)
 
+
 | Robot Name | Image |
 |------------|-------|
-| Devastator | <img src="media/devastator.png" width="150"> |
-| Lynx | <img src="profile/robots/lynx.jpg" width="150"> |
-| Turtlebot4 | <img src="profile/robots/turtlebot4.jpg" width="150"> |
+| Devastator | <img src="media/robots/devastator.png" width="150"> |
+| Lynx | <img src="media/robots/lynx.jpg" width="150"> |
+| Turtlebot4 | <img src="media/robots/turtlebot4.jpg" width="150"> |
 
 ### UAVs (Unmanned Aerial Vehicles)
 
 | Robot Name | Image |
 |------------|-------|
-| Mavtech RX2 | <img src="profile/robots/mavtech_rx2.jpg" width="150"> |
+| Mavtech RX2 | <img src="media/robots/mavtech_rx2.jpg" width="150"> |
 
 <h3 id="contributing">Contributing</h3>
 

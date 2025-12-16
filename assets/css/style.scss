@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 @import "jekyll-theme-minimal";
 
 /* --- 1. Refined Variables --- */
@@ -14,8 +14,8 @@
   --brand-surface: #ffffff;
   --brand-background: #F8F9FC;
   
-  --body-font: "Space Grotesk", "Inter", system-ui, sans-serif;
-  --heading-font: "Space Mono", "Space Grotesk", "Inter", system-ui, sans-serif;
+  --body-font: "Roboto", "Space Grotesk", "Inter", system-ui, sans-serif;
+  --heading-font: "Roboto", "Space Grotesk", "Inter", system-ui, sans-serif;
   
   --glass-bg: rgba(248, 249, 252, 0.85);
   --shadow-sm: 0 1px 2px 0 rgba(16, 31, 71, 0.05);
@@ -71,9 +71,7 @@ strong, b {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* FIX: Add max-width so it doesn't look stretched on ultrawide monitors */
-  max-width: 1200px; 
-  margin: 0 auto;
+  /* Full width as requested */
   width: 100%;
 }
 
