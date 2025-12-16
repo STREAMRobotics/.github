@@ -1,9 +1,9 @@
 # RoboticsXR
 
-**Status:** Submitted to ICUAS2026
+**Status:** Submitted to ICUAS2026, Corfu Greece, June 2026
 
 ## Authors
-Petre Ricioppo, Riccardo Enrico, Jean-Luc Sarvadon, Dario Ruggiero and Elisa Capello
+[Petre Ricioppo](https://www.polito.it/personale?p=petre.ricioppo), [Riccardo Enrico](https://www.polito.it/personale?p=riccardo.enrico), [Jean-Luc Sarvadon](https://www.polito.it/personale?p=jean-luc.sarvadon), [Dario Ruggiero](https://www.polito.it/personale?p=dario.ruggiero) and [Elisa Capello](https://www.polito.it/personale?p=elisa.capello)
 
 ## Affiliations
 All authors are affiliated with Politecnico di Torino, Turin, Italy.
