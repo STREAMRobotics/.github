@@ -1,19 +1,25 @@
----
----
-
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap");
 @import "jekyll-theme-minimal";
 
-/* Palette: Prussian Blue (primary), Cool Steel (muted), Space Indigo (surface), Orange (accent), Slate Grey (secondary) */
+/* --- 1. Refined Variables --- */
 :root {
+  /* Adjusted Primary to be slightly softer for headings */
   --brand-primary: #101F47;
+  /* Darker text color for better readability (WCAG AA compliant) */
+  --brand-text: #2D3748; 
   --brand-secondary: #6F7586;
   --brand-accent: #FD7E14;
   --brand-muted: #9B9EA8;
-  --brand-surface: #101E48;
+  /* Surface is now slightly off-white for cards/blocks */
+  --brand-surface: #ffffff;
   --brand-background: #F8F9FC;
+  
   --body-font: "Space Grotesk", "Inter", system-ui, sans-serif;
   --heading-font: "Space Mono", "Space Grotesk", "Inter", system-ui, sans-serif;
+  
+  --glass-bg: rgba(248, 249, 252, 0.85);
+  --shadow-sm: 0 1px 2px 0 rgba(16, 31, 71, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(16, 31, 71, 0.1), 0 2px 4px -1px rgba(16, 31, 71, 0.06);
 }
 
 html {
@@ -22,95 +28,168 @@ html {
 
 body {
   font-family: var(--body-font);
-  color: var(--brand-muted);
+  /* FIX: Use darker color for main text, use muted only for metadata */
+  color: var(--brand-text); 
   background: var(--brand-background);
+  font-size: 1.05rem; /* Slight bump for readability */
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+/* --- 2. Typography & Hierarchy --- */
+h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
   color: var(--brand-primary);
-  letter-spacing: 0.02em;
+  letter-spacing: -0.02em; /* Tighter letter spacing looks more modern */
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
 }
 
-p,
-li {
-  line-height: 1.7;
+p, li {
+  line-height: 1.75;
+  margin-bottom: 1.5rem;
 }
 
-strong,
-b {
+strong, b {
   color: var(--brand-primary);
   font-weight: 600;
 }
 
+/* --- 3. Glassmorphism Header --- */
 .stream-header {
   position: sticky;
   top: 0;
-  background: var(--brand-background);
-  z-index: 10;
-  padding: 2rem;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  /* Translucent background with blur */
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px); 
+  -webkit-backdrop-filter: blur(12px);
+  z-index: 100;
+  padding: 1.25rem 2rem;
+  border-bottom: 1px solid rgba(16, 31, 71, 0.05);
+  /* Removed harsh shadow for a subtle border instead */
 }
 
 .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: none; /* Override any max-width from the theme */
-    width: 100%; /* Ensure it takes full available width */
-    padding: 0 2rem; /* Add horizontal padding to the content */
-    box-sizing: border-box; /* Include padding in the width calculation */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* FIX: Add max-width so it doesn't look stretched on ultrawide monitors */
+  max-width: 1200px; 
+  margin: 0 auto;
+  width: 100%;
 }
 
 .logo-and-title {
   display: flex;
   align-items: center;
+  gap: 1rem;
 }
 
 .stream-header img {
-  height: 60px;
+  height: 48px; /* Slightly smaller for cleaner look */
   width: auto;
+  border-radius: 8px; /* Soften logo edges */
 }
 
+/* --- 4. Interactive Navigation --- */
 .main-nav {
   display: flex;
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
 .main-nav a {
-  font-size: 1.1rem;
+  font-size: 1rem;
   text-decoration: none;
   color: var(--brand-secondary);
   font-weight: 500;
+  position: relative;
   transition: color 0.3s ease;
+  font-family: var(--heading-font); /* Techy feel for nav */
+}
+
+/* Animated Underline Effect */
+.main-nav a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: var(--brand-accent);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
 }
 
 .main-nav a:hover {
   color: var(--brand-primary);
 }
 
-a {
+.main-nav a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* --- 5. Content Styling --- */
+
+/* Links in body text */
+p a, li a {
+  color: var(--brand-primary);
+  text-decoration: none;
+  border-bottom: 1px solid var(--brand-accent);
+  transition: all 0.2s ease;
+  font-weight: 600;
+}
+
+p a:hover, li a:hover {
+  background-color: rgba(253, 126, 20, 0.1); /* Subtle accent highlight */
+  border-bottom-color: transparent;
   color: var(--brand-accent);
-  font-weight: 500;
+  border-radius: 4px;
 }
 
-a:hover {
-  color: var(--brand-secondary);
-}
-
-.btn,
-button {
-  background: var(--brand-secondary);
-  border-color: var(--brand-secondary);
+/* Buttons */
+.btn, button {
+  background: var(--brand-primary);
+  border: 1px solid var(--brand-primary);
   color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-family: var(--heading-font);
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
+.btn:hover, button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(16, 31, 71, 0.25);
+  background: var(--brand-surface);
+  color: var(--brand-primary);
+}
+
+/* Blockquotes */
 blockquote {
-  border-left-color: var(--brand-secondary);
-  background: rgba(15, 32, 48, 0.05);
+  border-left: 4px solid var(--brand-accent);
+  background: white;
+  margin: 2rem 0;
+  padding: 1.5rem 2rem;
+  border-radius: 0 8px 8px 0;
+  color: var(--brand-secondary);
+  box-shadow: var(--shadow-sm);
+  font-style: italic;
+}
+
+/* Code Blocks (Optional if you post code) */
+pre, code {
+  font-family: var(--heading-font);
+  background: #EAEBF0;
+  color: var(--brand-primary);
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+/* Layout Constraint for Main Content */
+.wrapper {
+  max-width: 900px; /* Keep reading width comfortable */
+  margin: 0 auto;
+  padding: 0 2rem;
 }
